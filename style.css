@@ -207,3 +207,31 @@ nav button {
     font-size: 20px;
     color: white;
 }
+
+/*FAQs Section*/
+.third{
+    color: white;
+    margin: 30px 0px;
+
+}
+.third h3{
+    margin-left: 242px;
+    font-size: 30px;
+    font-weight: 550;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    max-width: 73vw;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto 250px;
+    gap: 10px;
+    padding: 30px 0px;
+}
+.faqbox{
+    background-color: rgba(45, 45, 45, 1);
+    height: 30px;
+    font-size: 30px;
+    padding: 39px 40px;
+}
