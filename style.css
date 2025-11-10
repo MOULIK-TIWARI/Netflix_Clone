@@ -12,38 +12,39 @@ body {
 }
 
 .main {
-    background: url("assests/Images/BG.jpg");
-    background-position: center center;
+    background: url(assests/Images/BG.jpg);
+    height: 80vh;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100vw) auto;
-    /*Gives zoom effect and responsive bg */
-    height: 88vh;
+    background-position: center center;
+    background-size: cover;
     position: relative;
 }
 
 .main .box {
-    height: 88vh;
-    width: 100%;
-    opacity: 0.7;
+
+    height: 80vh;
     background-color: black;
+    width: 100%;
+    opacity: 0.64;
     position: absolute;
     top: 0;
+
+
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    max-width: 60vw;
-    margin: auto;
     align-items: center;
-    height: 82px;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 80px;
 }
 
 nav img {
-    color: red;
-    width: 100px;
     position: relative;
     z-index: 10;
+    width: 170px;
 }
 
 nav button {
@@ -52,60 +53,157 @@ nav button {
 }
 
 .box2 {
-    height: calc(100% - 82px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     color: white;
+    height: calc(100% - 80px);
     position: relative;
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    gap: 25px;
-    padding: 0 30px;
+    z-index: 5;
+
 }
 
 .box2> :nth-child(1) {
-    font-size: 50px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-weight: 900;
+    font-size: 56px;
     text-align: center;
+
 }
 
 .box2> :nth-child(2) {
-    font-weight: 400;
-    font-size: 24px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 56px;
     text-align: center;
+
 }
 
 .box2> :nth-child(3) {
-    font-weight: 400;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 700;
     font-size: 20px;
+    margin: 30px 0;
     text-align: center;
 }
-.border{
-    background-color: grey;
-    height: 13px;
+
+.box2> :nth-child(4) {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
 }
-.btn{
-    padding: 10px 15px;
-    font-weight: bold;
-    background-color: white;
+
+/* Styling Buttons */
+.btn {
+    padding: 3px 8px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
 }
-.btn-red{
-    background-color: red; 
-    color:white;
-    padding: 3px 24px;
-    font-size: 25px;
-    border-radius: 8px;
-}
-.btn-red-sm{
+
+.btn-red-sm {
     background-color: red;
-    color:white;
 }
-.main input{
-    padding: 3px 24px;
-    font-size: 25px;
-    border-radius: 8px;
-    background-color: rgba(23, 23, 23, 0.3);
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.btn-red {
+    background-color: red;
+    font-size: 30px;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-weight: 550;
+}
+
+.main input {
+    font-size: 24px;
+    padding: 20px 120px 20px 10px;
+    border-radius: 7px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgb(80, 74, 74);
+}
+
+.border {
+    height: 7px;
+    background-color: gray;
+}
+
+/* Trending Now Section  */
+.first {
+    margin: 45px 0px;
+}
+
+.sec-heading {
+    color: white;
+    margin-left: 242px;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.sec-card {
+    display: flex;
+    align-items: center;
+    margin: auto 250px;
+    max-width: 69vw;
+    gap: 50px;
+    padding: 25px;
+    overflow-x: scroll;
+    /*This is to add scrollbar to the trending now section*/
+    scrollbar-width: none;
+    /*This is to hide the scrollbar display below the images*/
+}
+
+.sec-card img {
+    width: 220px;
+    border-radius: 7px;
+}
+
+.second {
+    color: white;
+    margin: 75px 0px;
+}
+
+.second-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 250px;
+    max-width: 73vw;
+    gap: 23px;
+    padding: 30px 0px;
+}
+
+.second-heading {
+    margin-left: 242px;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.second-box {
+    background-color: #192247;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 35px 20px;
+
+}
+
+.second-box h4 {
+    font-size: 29px;
+    font-weight: 550;
+}
+.second-box p{
+    margin: 18px 0px;
+    font-size: 20px;
+    color: white;
 }
