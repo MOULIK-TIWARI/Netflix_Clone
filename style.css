@@ -165,6 +165,7 @@ nav button {
 .sec-card img {
     width: 220px;
     border-radius: 7px;
+    border: 1px solid white;
 }
 
 .second {
